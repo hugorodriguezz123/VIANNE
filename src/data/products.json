@@ -1,0 +1,426 @@
+[
+  {
+    "id": "bata-sexy-encanto",
+    "name": "Bata sexy Encanto",
+    "category": "Babydolls y batas",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "L"
+    ],
+    "description": "",
+    "details": [
+      "Incluye 2 piezas"
+    ],
+    "images": [
+      "catalogo/Bata Sexy Encanto/WhatsApp Image 2026-11-18 at 10.28.49 PM (3).jpeg",
+      "catalogo/Bata Sexy Encanto/WhatsApp Image 2026-11-18 at 10.28.49 PM (4).jpeg"
+    ]
+  },
+  {
+    "id": "bodydoll-ensueno-blanco",
+    "name": "Babydoll Ensueño Blanco",
+    "category": "Babydolls y batas",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "L"
+    ],
+    "description": "",
+    "details": [
+      "Color blanco"
+    ],
+    "images": [
+      "catalogo/Bodydoll Ensueño Blanco/WhatsApp Image 2026-11-18 at 10.28.52 PM (5).jpeg"
+    ]
+  },
+  {
+    "id": "bodydoll-ensueno-vinotinto",
+    "name": "Babydoll Ensueño Vinotinto",
+    "category": "Babydolls y batas",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [
+      "Color vinotinto"
+    ],
+    "images": [
+      "catalogo/Bodydoll Ensueño vinotinto/WhatsApp Image 2026-11-18 at 10.28.52 PM (3).jpeg",
+      "catalogo/Bodydoll Ensueño vinotinto/WhatsApp Image 2026-11-18 at 10.28.52 PM (4).jpeg"
+    ]
+  },
+  {
+    "id": "bodydoll-seduccion",
+    "name": "Bodydoll Seducción",
+    "category": "Babydolls y batas",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Bodydoll seduccion/WhatsApp Image 2026-11-18 at 10.28.50 PM (1).jpeg",
+      "catalogo/Bodydoll seduccion/WhatsApp Image 2026-11-18 at 10.28.50 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-ambar-azul",
+    "name": "Conjunto Ámbar azul",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Color azul"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.54 PM (3).jpeg",
+      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.54 PM (4).jpeg",
+      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.55 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-ambar-negro",
+    "name": "Conjunto Lencería Ámbar Negro",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Color negro"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Ambar Negro/WhatsApp Image 2026-11-18 at 10.28.54 PM (1).jpeg",
+      "catalogo/conj. lenceria Ambar Negro/WhatsApp Image 2026-11-18 at 10.28.54 PM (2).jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-amelie",
+    "name": "Conjunto Lencería Amelie",
+    "category": "Conjuntos",
+    "price": 50000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Amelie/WhatsApp Image 2026-11-18 at 10.28.55 PM (1).jpeg",
+      "catalogo/conj. lenceria Amelie/WhatsApp Image 2026-11-18 at 10.28.55 PM (2).jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-amore",
+    "name": "Conjunto Lencería Amore",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.17 PM.jpeg",
+      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.18 PM (1).jpeg",
+      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.18 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-bali",
+    "name": "Conjunto Lencería Bali",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.49 PM (2).jpeg",
+      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.50 PM (5).jpeg",
+      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.51 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-bianca",
+    "name": "Conjunto Lencería Bianca",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Color negro"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (2).jpeg",
+      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (3).jpeg",
+      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (4).jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-lila-floral",
+    "name": "Conjunto Lencería Lila floral",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Color lila"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Lila Floral/WhatsApp Image 2026-11-18 at 10.28.57 PM (2).jpeg",
+      "catalogo/conj. lenceria Lila Floral/WhatsApp Image 2026-11-18 at 10.28.57 PM (3).jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-magnolia",
+    "name": "Conjunto Lencería Magnolia",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Magnolia/WhatsApp Image 2026-11-18 at 10.28.56 PM (1).jpeg",
+      "catalogo/conj. lenceria Magnolia/WhatsApp Image 2026-11-18 at 10.28.56 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-namy",
+    "name": "Conjunto Lencería NAMY",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria NAMY/WhatsApp Image 2026-11-18 at 10.28.48 PM (1).jpeg",
+      "catalogo/conj. lenceria NAMY/WhatsApp Image 2026-11-18 at 10.28.48 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-noir",
+    "name": "Conjunto Lencería Noir",
+    "category": "Conjuntos",
+    "price": 60000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Noir/WhatsApp Image 2026-11-20 at 1.30.35 PM (1).jpeg",
+      "catalogo/conj. lenceria Noir/WhatsApp Image 2026-11-20 at 1.30.35 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-nova",
+    "name": "Conjunto Lencería Nova",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.53 PM (2).jpeg",
+      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.53 PM (3).jpeg",
+      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.54 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-rose-sin-varilla",
+    "name": "Conjunto Lencería Rose",
+    "category": "Conjuntos",
+    "price": 50000,
+    "stock": 10,
+    "sizes": [
+      "XS",
+      "S"
+    ],
+    "description": "",
+    "details": [
+      "Sin varilla"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Rose sin Varilla/WhatsApp Image 2026-11-18 at 10.28.53 PM (1).jpeg",
+      "catalogo/conj. lenceria Rose sin Varilla/WhatsApp Image 2026-11-18 at 10.28.53 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-tentacion",
+    "name": "Conjunto Lencería Tentación",
+    "category": "Conjuntos",
+    "price": 58000,
+    "stock": 10,
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Tentacion/WhatsApp Image 2026-11-20 at 1.17.04 PM.jpeg",
+      "catalogo/conj. lenceria Tentacion/WhatsApp Image 2026-11-20 at 1.17.05 PM.jpeg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-valentina",
+    "name": "Conjunto Lencería Valentina",
+    "category": "Conjuntos",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (1).jpeg",
+      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (2).jpeg",
+      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (3).jpeg"
+    ]
+  },
+  {
+    "id": "set-grecia-cuerina",
+    "name": "Set Grecia en Cuerina",
+    "category": "Sets",
+    "price": 55000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Incluye esposas"
+    ],
+    "images": [
+      "catalogo/Set Grecia cuerina/WhatsApp Image 2026-11-18 at 10.28.49 PM (1).jpeg",
+      "catalogo/Set Grecia cuerina/WhatsApp Image 2026-11-18 at 10.28.49 PM.jpeg"
+    ]
+  },
+  {
+    "id": "set-lenceria-con-liguero-cuerina-matilda",
+    "name": "Set Lencería con liguero En cuerina Matilda",
+    "category": "Sets",
+    "price": 65000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set lenceria con liguero cuerina Matilda/WhatsApp Image 2026-11-18 at 10.28.52 PM (1).jpeg",
+      "catalogo/Set lenceria con liguero cuerina Matilda/WhatsApp Image 2026-11-18 at 10.28.52 PM (2).jpeg"
+    ]
+  },
+  {
+    "id": "set-lenceria-con-liguero-ivonne",
+    "name": "Set Lencería con Liguero Ivonne",
+    "category": "Sets",
+    "price": 75000,
+    "stock": 10,
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.51 PM (4).jpeg",
+      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.51 PM (5).jpeg",
+      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.52 PM.jpeg"
+    ]
+  },
+  {
+    "id": "set-lenceria-romance",
+    "name": "Set Lencería Romance",
+    "category": "Sets",
+    "price": 58000,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set lenceria Romance/WhatsApp Image 2026-11-18 at 10.28.57 PM (1).jpeg",
+      "catalogo/Set lenceria Romance/WhatsApp Image 2026-11-18 at 10.28.57 PM.jpeg"
+    ]
+  },
+  {
+    "id": "set-liguero-monserrat",
+    "name": "Set con Liguero Monserrat",
+    "category": "Sets",
+    "price": 65000,
+    "stock": 10,
+    "sizes": [
+      "S"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (2).jpeg",
+      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (3).jpeg",
+      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (4).jpeg"
+    ]
+  }
+]

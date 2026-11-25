@@ -1,0 +1,61 @@
+@import '@fontsource/cinzel/400.css';
+@import '@fontsource/cinzel/700.css';
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/400-italic.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  ::selection {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 60px 20px rgba(224, 17, 157, 0.15);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 40px rgba(224, 17, 157, 0.5);
+  }
+
+  /* Panel de vidrio esmerilado (glassmorphism) */
+  .glass {
+    @apply bg-white/[0.04] backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-strong {
+    @apply bg-bg/40 backdrop-blur-xl border border-white/10;
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #ff4fc7 0%, #e0119d 55%, #ff7ad6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(224, 17, 157, 0.4) transparent;
+  }
+}

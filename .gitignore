@@ -1,0 +1,50 @@
+# ── Dependencias ─────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ── Builds y cachés ──────────────────────────
+dist/
+dist-ssr/
+*.tsbuildinfo
+.vite/
+.cache/
+.eslintcache
+coverage/
+
+# ── Variables de entorno ─────────────────────
+# El número de WhatsApp se configura en Vercel (Settings → Environment Variables).
+# Solo se sube la plantilla .env.example.
+.env
+.env.*
+*.local
+!.env.example
+
+# ── Herramientas / IA ────────────────────────
+.claude/
+CLAUDE.local.md
+
+# ── Vercel ───────────────────────────────────
+.vercel/
+
+# ── Editores ─────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# ── Logs ─────────────────────────────────────
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Sistema operativo ────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Respaldos temporales ─────────────────────
+*.bak
+*.tmp
