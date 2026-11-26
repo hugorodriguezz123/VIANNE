@@ -4,6 +4,9 @@ import { motion } from 'framer-motion'
 import type { Product } from '../../data/products'
 import { LOW_STOCK_THRESHOLD } from '../../data/config'
 import { formatCOP, buildWhatsAppUrl } from '../../lib/format'
+import { hasPromo } from '../../data/products'
+import { Price, PromoBadge } from './Price'
+import { SoldOutOverlay } from './SoldOutOverlay'
 import { WhatsAppIcon } from './WhatsAppIcon'
 
 interface ProductModalProps {
@@ -76,15 +79,9 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               <img
                 src={images[imageIndex]}
                 alt={`${product.name} — foto ${imageIndex + 1} de ${images.length}`}
-                className={`w-full h-full object-contain ${soldOut ? 'opacity-40 grayscale' : ''}`}
+                className={`w-full h-full object-contain ${soldOut ? 'grayscale' : ''}`}
               />
-              {soldOut && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="glass-strong rounded-full font-display text-sm tracking-display uppercase text-text px-5 py-2.5">
-                    Agotado
-                  </span>
-                </div>
-              )}
+              {soldOut && <SoldOutOverlay size="lg" />}
               {images.length > 1 && (
                 <>
                   <button
@@ -131,15 +128,21 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
           {/* Información */}
           <div className="flex flex-col gap-5 p-4 pt-6 md:p-7">
             <div className="flex flex-col gap-2.5">
-              <span className="font-display text-[11px] tracking-display uppercase text-primary">
-                {product.category}
-              </span>
+              <div className="flex flex-wrap items-center gap-2.5">
+                <span className="font-display text-[11px] tracking-display uppercase text-primary">
+                  {product.category}
+                </span>
+                <PromoBadge product={product} />
+              </div>
               <h2 className="font-heading text-3xl md:text-4xl text-text leading-[1.1] tracking-tight">
                 {product.name}
               </h2>
-              <span className="font-sans font-semibold text-gradient text-2xl mt-1">
-                {formatCOP(product.price)}
-              </span>
+              <Price product={product} size="lg" className="mt-1" />
+              {hasPromo(product) && (
+                <span className="font-sans text-xs font-semibold text-primary-bright">
+                  Ahorras {formatCOP(product.price - product.salePrice)} · Precio de promoción
+                </span>
+              )}
             </div>
 
             {soldOut ? (
@@ -150,7 +153,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
             ) : (
               <span className="inline-flex items-center gap-2 self-start font-sans text-xs font-semibold uppercase tracking-wider text-primary-bright bg-primary/10 border border-primary-soft px-4 py-2 rounded-full">
                 <Check size={14} />
-                {lowStock ? `¡Solo quedan ${product.stock} unidades!` : 'Disponible'}
+                {lowStock ? '¡Últimas unidades!' : 'Disponible'}
               </span>
             )}
 
@@ -224,9 +227,13 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
             <div className="mt-auto pt-5 flex flex-col gap-3">
               {soldOut ? (
-                <span className="inline-flex items-center justify-center gap-2 font-sans font-semibold text-base px-8 py-4 rounded-full glass text-text-muted cursor-not-allowed">
+                <span
+                  role="button"
+                  aria-disabled="true"
+                  className="inline-flex items-center justify-center gap-2 font-sans font-semibold text-base px-8 py-4 rounded-full glass text-text-muted cursor-not-allowed select-none"
+                >
                   <PackageX size={18} />
-                  Agotado
+                  Agotado · No disponible para pedidos
                 </span>
               ) : needsSize ? (
                 <button

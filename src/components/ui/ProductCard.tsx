@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import type { Product } from '../../data/products'
 import { LOW_STOCK_THRESHOLD } from '../../data/config'
 import { formatCOP } from '../../lib/format'
+import { Price, PromoBadge } from './Price'
+import { SoldOutOverlay } from './SoldOutOverlay'
 
 interface ProductCardProps {
   product: Product
@@ -29,23 +31,22 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
             src={product.images[0]}
             alt={product.name}
             loading="lazy"
-            className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 ${
-              soldOut ? 'opacity-40 grayscale' : ''
+            className={`w-full h-full object-cover transition-transform duration-500 ${
+              soldOut ? 'grayscale' : 'group-hover:scale-105'
             }`}
           />
 
-          {soldOut && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="glass-strong rounded-full font-display text-[11px] tracking-display uppercase text-text px-4 py-2">
-                Agotado
-              </span>
-            </div>
-          )}
+          {soldOut && <SoldOutOverlay />}
 
-          {lowStock && (
-            <span className="absolute top-2.5 left-2.5 font-sans text-[11px] font-semibold uppercase tracking-wider text-white bg-primary shadow-glow-sm px-3 py-1.5 rounded-full">
-              ¡Últimas {product.stock}!
-            </span>
+          {(product.salePrice !== null || lowStock) && !soldOut && (
+            <div className="absolute top-2.5 left-2.5 flex flex-col items-start gap-1.5">
+              <PromoBadge product={product} />
+              {lowStock && (
+                <span className="font-sans text-[11px] font-semibold uppercase tracking-wider text-text glass-strong px-3 py-1.5 rounded-full">
+                  ¡Últimas unidades!
+                </span>
+              )}
+            </div>
           )}
 
           {!soldOut && (
@@ -63,9 +64,13 @@ export function ProductCard({ product, onSelect }: ProductCardProps) {
           <h3 className="font-heading text-base md:text-lg text-text leading-snug group-hover:text-primary-bright transition-colors">
             {product.name}
           </h3>
-          <span className="font-sans font-semibold text-primary-bright text-sm md:text-base mt-0.5">
-            {formatCOP(product.price)}
-          </span>
+          {soldOut ? (
+            <span className="font-sans text-sm font-semibold text-text-muted mt-0.5">
+              Agotado · <s className="font-normal">{formatCOP(product.salePrice ?? product.price)}</s>
+            </span>
+          ) : (
+            <Price product={product} className="mt-0.5" />
+          )}
           {product.sizes.length > 0 && (
             <span className="font-sans text-[11px] text-text-muted tracking-wide">
               Tallas: {product.sizes.join(' · ')}

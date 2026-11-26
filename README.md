@@ -56,12 +56,24 @@ Si cambias la variable en Vercel, haz **Redeploy**: el número se inserta al com
 El catálogo vive dentro del proyecto, en `src/assets/catalogo/`. Cada producto es una subcarpeta con sus fotos y un `details.txt`:
 
 ```
-Conjunto Lencería Noir        ← primera línea: nombre
-Precio: 60.000
-Tallas disponibles: S-M-L     ← también acepta "Solo M", "XS - S", "Disponible en talla S"
+Conjunto Lencería Toscana     ← primera línea: nombre
+Precio: 70.000
+Tallas disponibles: XS-S      ← también acepta "Solo M", "XS - S", "Talla única",
+                                 o las tallas en la línea siguiente
+Descuento 55.000              ← opcional: precio en PROMO (o "Descuento 20%")
+Últimas unidades              ← opcional: etiqueta "¡Últimas unidades!"
+Agotado                       ← opcional: sello "Agotado" y sin botón de WhatsApp (va al final)
 Color negro                   ← opcional
 Incluye esposas               ← cualquier otra línea aparece como detalle
 ```
+
+**Promociones:** si el txt tiene una línea `Descuento`, el producto sale **primero** en el catálogo, con la etiqueta **PROMO -X%**, el precio anterior tachado y un filtro **Promos**. El mensaje de WhatsApp envía el precio promo. Para quitar la promo, borra la línea y vuelve a ejecutar el comando.
+
+**Categorías automáticas** según el nombre: Babydolls y batas (babydoll, bata), Accesorios (arnés, esposas, collar, antifaz), Sets (set…, con liguero) y Conjuntos (el resto).
+
+**Nombres de fotos:** el comando renombra solo las fotos a `vianne-<modelo>-<número>.jpg` (ej. `WhatsApp Image 2026-11-18 at 10.28.49 PM.jpeg` → `vianne-noir-1.jpg`), respetando el orden. Puedes agregar fotos con cualquier nombre: se numeran después de las existentes. La `-1` es la foto principal.
+
+Las fotos repetidas dentro de una carpeta (mismo contenido con otro nombre) se omiten con un aviso. Bórralas de la carpeta.
 
 Para agregar, editar o quitar productos, cambia la carpeta y ejecuta:
 
@@ -69,7 +81,7 @@ Para agregar, editar o quitar productos, cambia la carpeta y ejecuta:
 pnpm catalogo        # o: npm run catalogo
 ```
 
-El comando genera `productos.csv` y lo importa. Las fotos no se copian: se quedan en `src/assets/catalogo/` y Vite las incluye al compilar, con nombres limpios en `dist/assets/img/`. La primera foto de cada carpeta, ordenada por nombre de archivo, es la principal. La categoría se asigna sola según el nombre (Conjuntos, Sets, Babydolls y batas). ⚠️ Sobrescribe `productos.csv`.
+El comando genera `productos.csv` y lo importa. Las fotos no se copian: se quedan en `src/assets/catalogo/` y Vite las incluye al compilar, con nombres limpios en `dist/assets/img/`. La primera foto de cada carpeta, ordenada por nombre de archivo, es la principal. ⚠️ Sobrescribe `productos.csv`.
 
 ## 📦 Cómo actualizar los productos (CSV)
 
@@ -95,6 +107,7 @@ El script valida los datos (precios, stock, imágenes, ids duplicados) y muestra
 | `nombre` | Nombre del producto |
 | `categoria` | Categoría en español (los filtros se generan solos) |
 | `precio` | Precio en COP, sin símbolo. Acepta `85000` o `85.000` |
+| `precio_promo` | (Opcional) Precio con descuento. Si tiene valor, el producto sale primero con la etiqueta PROMO |
 | `stock` | Unidades disponibles. `0` = se muestra como **Agotado** (no se puede comprar) |
 | `tallas` | (Opcional) Tallas separadas por `\|` — ej: `S\|M\|L`. El cliente debe elegir una antes de comprar |
 | `descripcion` | Texto descriptivo que aparece en el detalle |

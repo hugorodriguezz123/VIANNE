@@ -3,8 +3,8 @@ import { Sparkles, Package, HandCoins } from 'lucide-react'
 import { Button } from '../ui/Button'
 import { WhatsAppIcon } from '../ui/WhatsAppIcon'
 import { products } from '../../data/products'
-import { WHATSAPP_NUMBER, CASH_ON_DELIVERY_AREA } from '../../data/config'
-import { formatCOP } from '../../lib/format'
+import { WHATSAPP_NUMBER } from '../../data/config'
+import { Price, PromoBadge } from '../ui/Price'
 
 const scrollToCatalog = (e?: React.MouseEvent) => {
   e?.preventDefault()
@@ -35,14 +35,15 @@ export function Hero() {
               Tienda íntima · Colombia
             </span>
             <h1 className="font-heading text-6xl md:text-7xl lg:text-8xl text-text leading-[1.02] tracking-tight">
-              Intimidad,
+              ¡Siéntete
               <br />
-              <em className="not-italic text-gradient glow-text">curada.</em>
+              <em className="not-italic text-gradient glow-text">increíble!</em>
             </h1>
             <p className="font-sans text-lg md:text-xl text-text-muted leading-relaxed max-w-lg">
-              Lencería premium, bienestar sensual y accesorios seleccionados.
-              Pide por WhatsApp y recibe con empaque discreto en toda Colombia.
-              Pago contraentrega en el {CASH_ON_DELIVERY_AREA}.
+              Lencería femenina y accesorios para explorar tu sensualidad. Descubre conjuntos,
+              corsets, juguetes íntimos, lubricantes y mucho más. Compra fácil por WhatsApp y
+              recibe tus pedidos con empaque discreto y pago contraentrega en Bucaramanga y
+              Colombia 🇨🇴
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -99,14 +100,13 @@ export function Hero() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <PromoBadge product={featured[0]} className="absolute top-3 left-3" />
                   <div className="absolute bottom-3 left-3 right-3 glass-strong rounded-2xl px-4 py-3">
                     <p className="font-heading text-sm text-text leading-snug truncate">
                       {featured[0].name}
                     </p>
                     <div className="flex items-center justify-between gap-2 mt-0.5">
-                      <p className="font-sans font-semibold text-primary-bright text-sm">
-                        {formatCOP(featured[0].price)}
-                      </p>
+                      <Price product={featured[0]} />
                       <span className="font-sans text-[11px] text-text-muted group-hover:text-text transition-colors">
                         Ver catálogo →
                       </span>

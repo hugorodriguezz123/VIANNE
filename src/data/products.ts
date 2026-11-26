@@ -7,6 +7,8 @@ export type Product = {
   name: string
   category: string
   price: number
+  /** Precio con descuento (promo). null = sin promoción */
+  salePrice: number | null
   stock: number
   sizes: string[]
   description: string
@@ -30,6 +32,19 @@ function resolveImage(path: string): string {
   return url ?? path
 }
 
-export const products: Product[] = data.map((p) => ({ ...p, images: p.images.map(resolveImage) }))
+// Orden: promociones primero, agotados al final; el resto conserva el orden del catálogo.
+const rank = (p: { salePrice: number | null; stock: number }) => (p.stock === 0 ? 2 : p.salePrice !== null ? 0 : 1)
+export const products: Product[] = data
+  .map((p) => ({ ...p, images: p.images.map(resolveImage) }))
+  .sort((a, b) => rank(a) - rank(b))
+
+export const hasPromo = (p: Product): p is Product & { salePrice: number } => p.salePrice !== null
+
+/** Precio que paga el cliente (promo si existe). */
+export const finalPrice = (p: Product): number => p.salePrice ?? p.price
+
+/** Porcentaje de descuento redondeado, ej. 21 */
+export const discountPercent = (p: Product): number =>
+  p.salePrice === null ? 0 : Math.round((1 - p.salePrice / p.price) * 100)
 
 export const categories: string[] = [...new Set(products.map((p) => p.category))]

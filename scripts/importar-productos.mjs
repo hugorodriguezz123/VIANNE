@@ -10,9 +10,11 @@
  *   npm run productos -- otro.csv  → usa otro archivo
  *
  * Formato del CSV (separador ; o ,):
- *   id;nombre;categoria;precio;stock;tallas;descripcion;detalles;imagenes
+ *   id;nombre;categoria;precio;precio_promo;stock;tallas;descripcion;detalles;imagenes
  *
  *   - precio:   en pesos colombianos, sin símbolo. Acepta 85000 o 85.000
+ *   - precio_promo: (opcional) precio con descuento. Si tiene valor, el producto sale
+ *               primero en el catálogo con la etiqueta PROMO
  *   - stock:    número entero. 0 = agotado (se muestra pero no se puede comprar)
  *   - tallas:   (opcional) lista separada por | (ej: "S|M|L"). El cliente elige una antes de comprar
  *   - detalles: lista separada por | (ej: "Talla S a XL|Seda natural|Lavado a mano")
@@ -106,6 +108,8 @@ rows.forEach((r, idx) => {
   const price = parsePrice(get('precio'))
   const stock = parseInt(get('stock'), 10)
   const description = get('descripcion')
+  const promoRaw = col.precio_promo === undefined ? '' : get('precio_promo')
+  const salePrice = promoRaw ? parsePrice(promoRaw) : null
   const sizes = (col.tallas === undefined ? '' : get('tallas')).split('|').map((t) => t.trim()).filter(Boolean)
   const details = get('detalles').split('|').map((d) => d.trim()).filter(Boolean)
   const images = get('imagenes').split('|').map((u) => u.trim()).filter(Boolean)
@@ -116,10 +120,12 @@ rows.forEach((r, idx) => {
   if (!name) errors.push(`Línea ${line}: falta el nombre`)
   if (!category) errors.push(`Línea ${line}: falta la categoría`)
   if (!Number.isFinite(price) || price <= 0) errors.push(`Línea ${line}: precio inválido "${get('precio')}"`)
+  if (salePrice !== null && (!Number.isFinite(salePrice) || salePrice <= 0 || salePrice >= price))
+    errors.push(`Línea ${line}: precio_promo "${promoRaw}" debe ser menor que el precio`)
   if (!Number.isInteger(stock) || stock < 0) errors.push(`Línea ${line}: stock inválido "${get('stock')}"`)
   if (images.length === 0) errors.push(`Línea ${line}: se necesita al menos una imagen`)
 
-  products.push({ id, name, category, price, stock, sizes, description, details, images })
+  products.push({ id, name, category, price, salePrice, stock, sizes, description, details, images })
 })
 
 if (errors.length) {
@@ -135,4 +141,6 @@ const categorias = [...new Set(products.map((p) => p.category))]
 console.log(`✔ ${products.length} productos importados → src/data/products.json`)
 console.log(`  Categorías: ${categorias.join(', ')}`)
 if (agotados) console.log(`  Agotados: ${agotados}`)
+const enPromo = products.filter((p) => p.salePrice).length
+if (enPromo) console.log(`  En promoción: ${enPromo} (se muestran primero)`)
 console.log('\n  Recarga la página (o reinicia npm run dev) para ver los cambios.')

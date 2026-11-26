@@ -1,5 +1,5 @@
 import { WHATSAPP_NUMBER } from '../data/config'
-import type { Product } from '../data/products'
+import { hasPromo, type Product } from '../data/products'
 
 const copFormatter = new Intl.NumberFormat('es-CO', {
   style: 'currency',
@@ -20,7 +20,9 @@ export function buildWhatsAppUrl(product: Product, size?: string): string {
     '',
     `*${product.name}*`,
     ...(size ? [`Talla: *${size}*`] : []),
-    `Precio: *${formatCOP(product.price)}*`,
+    ...(hasPromo(product)
+      ? [`Precio PROMO: *${formatCOP(product.salePrice)}* (antes ${formatCOP(product.price)})`]
+      : [`Precio: *${formatCOP(product.price)}*`]),
     '',
     photoUrl,
     '',

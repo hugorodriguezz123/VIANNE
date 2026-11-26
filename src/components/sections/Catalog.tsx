@@ -1,13 +1,15 @@
 import { useMemo, useState } from 'react'
-import { Search, SearchX } from 'lucide-react'
+import { Search, SearchX, Tag } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
-import { products, categories, type Product } from '../../data/products'
+import { products, categories, hasPromo, type Product } from '../../data/products'
 import { SectionHeading } from '../ui/SectionHeading'
 import { ProductCard } from '../ui/ProductCard'
 import { ProductModal } from '../ui/ProductModal'
 import { Reveal } from '../ui/Reveal'
 
 const ALL = 'Todos'
+const PROMOS = 'Promos'
+const promoCount = products.filter(hasPromo).length
 
 export function Catalog() {
   const [activeCategory, setActiveCategory] = useState(ALL)
@@ -17,7 +19,8 @@ export function Catalog() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     return products.filter((p) => {
-      const matchesCategory = activeCategory === ALL || p.category === activeCategory
+      const matchesCategory =
+        activeCategory === ALL || (activeCategory === PROMOS ? hasPromo(p) : p.category === activeCategory)
       const haystack = [p.name, p.description, ...p.details, ...p.sizes.map((s) => `talla ${s}`)].join(' ').toLowerCase()
       const matchesQuery = !q || haystack.includes(q)
       return matchesCategory && matchesQuery
@@ -44,17 +47,23 @@ export function Catalog() {
         <Reveal delay={0.1}>
           <div className="mt-12 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
             <div className="flex flex-wrap gap-2">
-              {[ALL, ...categories].map((cat) => (
+              {[ALL, ...(promoCount > 0 ? [PROMOS] : []), ...categories].map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`font-sans text-sm px-5 py-2.5 rounded-full border transition-all duration-200 ${
+                  className={`inline-flex items-center gap-1.5 font-sans text-sm px-5 py-2.5 rounded-full border transition-all duration-200 ${
                     activeCategory === cat
                       ? 'bg-primary text-white border-primary shadow-glow-sm'
-                      : 'glass text-text-muted hover:border-primary-soft hover:text-text'
+                      : cat === PROMOS
+                        ? 'bg-primary/10 border-primary-soft text-primary-bright hover:bg-primary/20'
+                        : 'glass text-text-muted hover:border-primary-soft hover:text-text'
                   }`}
                 >
+                  {cat === PROMOS && <Tag size={13} />}
                   {cat}
+                  {cat === PROMOS && (
+                    <span className="font-semibold text-[11px] opacity-80">({promoCount})</span>
+                  )}
                 </button>
               ))}
             </div>

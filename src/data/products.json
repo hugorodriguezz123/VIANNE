@@ -1,9 +1,26 @@
 [
   {
+    "id": "arnes-graduable",
+    "name": "Arnés graduable",
+    "category": "Accesorios",
+    "price": 50000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "Única"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Arnes Graduable/vianne-arnes-graduable-1.jpg"
+    ]
+  },
+  {
     "id": "bata-sexy-encanto",
     "name": "Bata sexy Encanto",
     "category": "Babydolls y batas",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "L"
@@ -13,8 +30,8 @@
       "Incluye 2 piezas"
     ],
     "images": [
-      "catalogo/Bata Sexy Encanto/WhatsApp Image 2026-11-18 at 10.28.49 PM (3).jpeg",
-      "catalogo/Bata Sexy Encanto/WhatsApp Image 2026-11-18 at 10.28.49 PM (4).jpeg"
+      "catalogo/Bata Sexy Encanto/vianne-bata-encanto-1.jpg",
+      "catalogo/Bata Sexy Encanto/vianne-bata-encanto-2.jpg"
     ]
   },
   {
@@ -22,6 +39,7 @@
     "name": "Babydoll Ensueño Blanco",
     "category": "Babydolls y batas",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -32,7 +50,7 @@
       "Color blanco"
     ],
     "images": [
-      "catalogo/Bodydoll Ensueño Blanco/WhatsApp Image 2026-11-18 at 10.28.52 PM (5).jpeg"
+      "catalogo/Bodydoll Ensueño Blanco/vianne-bodydoll-ensueno-blanco-1.jpg"
     ]
   },
   {
@@ -40,6 +58,7 @@
     "name": "Babydoll Ensueño Vinotinto",
     "category": "Babydolls y batas",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "L",
@@ -50,8 +69,26 @@
       "Color vinotinto"
     ],
     "images": [
-      "catalogo/Bodydoll Ensueño vinotinto/WhatsApp Image 2026-11-18 at 10.28.52 PM (3).jpeg",
-      "catalogo/Bodydoll Ensueño vinotinto/WhatsApp Image 2026-11-18 at 10.28.52 PM (4).jpeg"
+      "catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-1.jpg",
+      "catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-2.jpg"
+    ]
+  },
+  {
+    "id": "bodydoll-provenza",
+    "name": "Babydoll Provenza",
+    "category": "Babydolls y batas",
+    "price": 60000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-1.jpg",
+      "catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-2.jpg"
     ]
   },
   {
@@ -59,6 +96,7 @@
     "name": "Bodydoll Seducción",
     "category": "Babydolls y batas",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "L",
@@ -67,8 +105,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/Bodydoll seduccion/WhatsApp Image 2026-11-18 at 10.28.50 PM (1).jpeg",
-      "catalogo/Bodydoll seduccion/WhatsApp Image 2026-11-18 at 10.28.50 PM.jpeg"
+      "catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-1.jpg",
+      "catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-2.jpg"
     ]
   },
   {
@@ -76,6 +114,7 @@
     "name": "Conjunto Ámbar azul",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -86,9 +125,9 @@
       "Color azul"
     ],
     "images": [
-      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.54 PM (3).jpeg",
-      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.54 PM (4).jpeg",
-      "catalogo/conj. lenceria Ambar Azul/WhatsApp Image 2026-11-18 at 10.28.55 PM.jpeg"
+      "catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-1.jpg",
+      "catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-2.jpg",
+      "catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-3.jpg"
     ]
   },
   {
@@ -96,6 +135,7 @@
     "name": "Conjunto Lencería Ámbar Negro",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "M"
@@ -105,8 +145,8 @@
       "Color negro"
     ],
     "images": [
-      "catalogo/conj. lenceria Ambar Negro/WhatsApp Image 2026-11-18 at 10.28.54 PM (1).jpeg",
-      "catalogo/conj. lenceria Ambar Negro/WhatsApp Image 2026-11-18 at 10.28.54 PM (2).jpeg"
+      "catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-1.jpg",
+      "catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-2.jpg"
     ]
   },
   {
@@ -114,6 +154,7 @@
     "name": "Conjunto Lencería Amelie",
     "category": "Conjuntos",
     "price": 50000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -124,8 +165,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Amelie/WhatsApp Image 2026-11-18 at 10.28.55 PM (1).jpeg",
-      "catalogo/conj. lenceria Amelie/WhatsApp Image 2026-11-18 at 10.28.55 PM (2).jpeg"
+      "catalogo/conj. lenceria Amelie/vianne-amelie-1.jpg",
+      "catalogo/conj. lenceria Amelie/vianne-amelie-2.jpg"
     ]
   },
   {
@@ -133,6 +174,7 @@
     "name": "Conjunto Lencería Amore",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -142,9 +184,9 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.17 PM.jpeg",
-      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.18 PM (1).jpeg",
-      "catalogo/conj. lenceria amore/WhatsApp Image 2026-11-20 at 1.15.18 PM.jpeg"
+      "catalogo/conj. lenceria amore/vianne-amore-1.jpg",
+      "catalogo/conj. lenceria amore/vianne-amore-2.jpg",
+      "catalogo/conj. lenceria amore/vianne-amore-3.jpg"
     ]
   },
   {
@@ -152,6 +194,7 @@
     "name": "Conjunto Lencería Bali",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -160,9 +203,9 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.49 PM (2).jpeg",
-      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.50 PM (5).jpeg",
-      "catalogo/conj. lenceria Bali/WhatsApp Image 2026-11-18 at 10.28.51 PM.jpeg"
+      "catalogo/conj. lenceria Bali/vianne-bali-1.jpg",
+      "catalogo/conj. lenceria Bali/vianne-bali-2.jpg",
+      "catalogo/conj. lenceria Bali/vianne-bali-3.jpg"
     ]
   },
   {
@@ -170,6 +213,7 @@
     "name": "Conjunto Lencería Bianca",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -180,9 +224,9 @@
       "Color negro"
     ],
     "images": [
-      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (2).jpeg",
-      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (3).jpeg",
-      "catalogo/conj. lenceria Bianca/WhatsApp Image 2026-11-18 at 10.28.56 PM (4).jpeg"
+      "catalogo/conj. lenceria Bianca/vianne-bianca-1.jpg",
+      "catalogo/conj. lenceria Bianca/vianne-bianca-2.jpg",
+      "catalogo/conj. lenceria Bianca/vianne-bianca-3.jpg"
     ]
   },
   {
@@ -190,6 +234,7 @@
     "name": "Conjunto Lencería Lila floral",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -200,8 +245,26 @@
       "Color lila"
     ],
     "images": [
-      "catalogo/conj. lenceria Lila Floral/WhatsApp Image 2026-11-18 at 10.28.57 PM (2).jpeg",
-      "catalogo/conj. lenceria Lila Floral/WhatsApp Image 2026-11-18 at 10.28.57 PM (3).jpeg"
+      "catalogo/conj. lenceria Lila Floral/vianne-lila-floral-1.jpg",
+      "catalogo/conj. lenceria Lila Floral/vianne-lila-floral-2.jpg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-liora",
+    "name": "Conjunto Lencería Liora",
+    "category": "Conjuntos",
+    "price": 55000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Liora/vianne-liora-1.jpg",
+      "catalogo/conj. lenceria Liora/vianne-liora-2.jpg"
     ]
   },
   {
@@ -209,6 +272,7 @@
     "name": "Conjunto Lencería Magnolia",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "XS",
@@ -218,8 +282,27 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Magnolia/WhatsApp Image 2026-11-18 at 10.28.56 PM (1).jpeg",
-      "catalogo/conj. lenceria Magnolia/WhatsApp Image 2026-11-18 at 10.28.56 PM.jpeg"
+      "catalogo/conj. lenceria Magnolia/vianne-magnolia-1.jpg",
+      "catalogo/conj. lenceria Magnolia/vianne-magnolia-2.jpg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-mia",
+    "name": "Conjunto Lencería Mía",
+    "category": "Conjuntos",
+    "price": 55000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Mia/vianne-mia-1.jpg",
+      "catalogo/conj. lenceria Mia/vianne-mia-2.jpg",
+      "catalogo/conj. lenceria Mia/vianne-mia-3.jpg"
     ]
   },
   {
@@ -227,6 +310,7 @@
     "name": "Conjunto Lencería NAMY",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -235,8 +319,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria NAMY/WhatsApp Image 2026-11-18 at 10.28.48 PM (1).jpeg",
-      "catalogo/conj. lenceria NAMY/WhatsApp Image 2026-11-18 at 10.28.48 PM.jpeg"
+      "catalogo/conj. lenceria NAMY/vianne-namy-1.jpg",
+      "catalogo/conj. lenceria NAMY/vianne-namy-2.jpg"
     ]
   },
   {
@@ -244,6 +328,7 @@
     "name": "Conjunto Lencería Noir",
     "category": "Conjuntos",
     "price": 60000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -253,8 +338,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Noir/WhatsApp Image 2026-11-20 at 1.30.35 PM (1).jpeg",
-      "catalogo/conj. lenceria Noir/WhatsApp Image 2026-11-20 at 1.30.35 PM.jpeg"
+      "catalogo/conj. lenceria Noir/vianne-noir-1.jpg",
+      "catalogo/conj. lenceria Noir/vianne-noir-2.jpg"
     ]
   },
   {
@@ -262,6 +347,7 @@
     "name": "Conjunto Lencería Nova",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "XS",
@@ -272,9 +358,30 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.53 PM (2).jpeg",
-      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.53 PM (3).jpeg",
-      "catalogo/conj. lenceria Nova/WhatsApp Image 2026-11-18 at 10.28.54 PM.jpeg"
+      "catalogo/conj. lenceria Nova/vianne-nova-1.jpg",
+      "catalogo/conj. lenceria Nova/vianne-nova-2.jpg",
+      "catalogo/conj. lenceria Nova/vianne-nova-3.jpg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-primavera",
+    "name": "Conjunto Lencería Primavera",
+    "category": "Conjuntos",
+    "price": 55000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Primavera/vianne-primavera-1.jpg",
+      "catalogo/conj. lenceria Primavera/vianne-primavera-2.jpg",
+      "catalogo/conj. lenceria Primavera/vianne-primavera-3.jpg"
     ]
   },
   {
@@ -282,6 +389,7 @@
     "name": "Conjunto Lencería Rose",
     "category": "Conjuntos",
     "price": 50000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "XS",
@@ -292,8 +400,8 @@
       "Sin varilla"
     ],
     "images": [
-      "catalogo/conj. lenceria Rose sin Varilla/WhatsApp Image 2026-11-18 at 10.28.53 PM (1).jpeg",
-      "catalogo/conj. lenceria Rose sin Varilla/WhatsApp Image 2026-11-18 at 10.28.53 PM.jpeg"
+      "catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-1.jpg",
+      "catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-2.jpg"
     ]
   },
   {
@@ -301,7 +409,8 @@
     "name": "Conjunto Lencería Tentación",
     "category": "Conjuntos",
     "price": 58000,
-    "stock": 10,
+    "salePrice": null,
+    "stock": 0,
     "sizes": [
       "M",
       "L"
@@ -309,8 +418,27 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Tentacion/WhatsApp Image 2026-11-20 at 1.17.04 PM.jpeg",
-      "catalogo/conj. lenceria Tentacion/WhatsApp Image 2026-11-20 at 1.17.05 PM.jpeg"
+      "catalogo/conj. lenceria Tentacion/vianne-tentacion-1.jpg",
+      "catalogo/conj. lenceria Tentacion/vianne-tentacion-2.jpg"
+    ]
+  },
+  {
+    "id": "conj-lenceria-turquia",
+    "name": "Conjunto Lencería Turquía",
+    "category": "Conjuntos",
+    "price": 70000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [
+      "Incluye accesorios liguero+ collar"
+    ],
+    "images": [
+      "catalogo/conj. lenceria Turquia/vianne-turquia-1.jpg"
     ]
   },
   {
@@ -318,6 +446,7 @@
     "name": "Conjunto Lencería Valentina",
     "category": "Conjuntos",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -328,9 +457,47 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (1).jpeg",
-      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (2).jpeg",
-      "catalogo/conj. lenceria Valentina/WhatsApp Image 2026-11-18 at 10.28.51 PM (3).jpeg"
+      "catalogo/conj. lenceria Valentina/vianne-valentina-1.jpg",
+      "catalogo/conj. lenceria Valentina/vianne-valentina-2.jpg",
+      "catalogo/conj. lenceria Valentina/vianne-valentina-3.jpg"
+    ]
+  },
+  {
+    "id": "conj-lenceriatoscana",
+    "name": "Conjunto lencería Toscana",
+    "category": "Conjuntos",
+    "price": 70000,
+    "salePrice": 55000,
+    "stock": 3,
+    "sizes": [
+      "XS",
+      "S"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceriaToscana/vianne-toscana-1.jpg",
+      "catalogo/conj. lenceriaToscana/vianne-toscana-2.jpg"
+    ]
+  },
+  {
+    "id": "lenceria-con-liguero-andorra",
+    "name": "Lencería con Liguero Andorra",
+    "category": "Sets",
+    "price": 70000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Lenceria con liguero Andorra/vianne-andorra-1.jpg",
+      "catalogo/Lenceria con liguero Andorra/vianne-andorra-2.jpg"
     ]
   },
   {
@@ -338,6 +505,7 @@
     "name": "Set Grecia en Cuerina",
     "category": "Sets",
     "price": 55000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -348,8 +516,42 @@
       "Incluye esposas"
     ],
     "images": [
-      "catalogo/Set Grecia cuerina/WhatsApp Image 2026-11-18 at 10.28.49 PM (1).jpeg",
-      "catalogo/Set Grecia cuerina/WhatsApp Image 2026-11-18 at 10.28.49 PM.jpeg"
+      "catalogo/Set Grecia cuerina/vianne-grecia-cuerina-1.jpg",
+      "catalogo/Set Grecia cuerina/vianne-grecia-cuerina-2.jpg"
+    ]
+  },
+  {
+    "id": "set-lenceria-cerena",
+    "name": "Set Lencería Cerena",
+    "category": "Sets",
+    "price": 65000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set Lenceria Cerena/vianne-cerena-1.jpg"
+    ]
+  },
+  {
+    "id": "set-lenceria-con-liguero-aurora",
+    "name": "Set Lenceria con Liguero Aurora",
+    "category": "Sets",
+    "price": 75000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set Lenceria con liguero Aurora/vianne-aurora-1.jpg"
     ]
   },
   {
@@ -357,6 +559,7 @@
     "name": "Set Lencería con liguero En cuerina Matilda",
     "category": "Sets",
     "price": 65000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -366,8 +569,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/Set lenceria con liguero cuerina Matilda/WhatsApp Image 2026-11-18 at 10.28.52 PM (1).jpeg",
-      "catalogo/Set lenceria con liguero cuerina Matilda/WhatsApp Image 2026-11-18 at 10.28.52 PM (2).jpeg"
+      "catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-1.jpg",
+      "catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-2.jpg"
     ]
   },
   {
@@ -375,6 +578,7 @@
     "name": "Set Lencería con Liguero Ivonne",
     "category": "Sets",
     "price": 75000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "M",
@@ -384,9 +588,28 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.51 PM (4).jpeg",
-      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.51 PM (5).jpeg",
-      "catalogo/Set lenceria con liguero Ivonne/WhatsApp Image 2026-11-18 at 10.28.52 PM.jpeg"
+      "catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-1.jpg",
+      "catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-2.jpg",
+      "catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-3.jpg"
+    ]
+  },
+  {
+    "id": "set-lenceria-con-liguero-venecia",
+    "name": "Set Lencería con liguero Venecia",
+    "category": "Sets",
+    "price": 65000,
+    "salePrice": null,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [
+      "Tela cuerina"
+    ],
+    "images": [
+      "catalogo/Set Lenceria con liguero Venecia/vianne-venecia-1.jpg"
     ]
   },
   {
@@ -394,6 +617,7 @@
     "name": "Set Lencería Romance",
     "category": "Sets",
     "price": 58000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S",
@@ -402,8 +626,8 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/Set lenceria Romance/WhatsApp Image 2026-11-18 at 10.28.57 PM (1).jpeg",
-      "catalogo/Set lenceria Romance/WhatsApp Image 2026-11-18 at 10.28.57 PM.jpeg"
+      "catalogo/Set lenceria Romance/vianne-romance-1.jpg",
+      "catalogo/Set lenceria Romance/vianne-romance-2.jpg"
     ]
   },
   {
@@ -411,6 +635,7 @@
     "name": "Set con Liguero Monserrat",
     "category": "Sets",
     "price": 65000,
+    "salePrice": null,
     "stock": 10,
     "sizes": [
       "S"
@@ -418,9 +643,9 @@
     "description": "",
     "details": [],
     "images": [
-      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (2).jpeg",
-      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (3).jpeg",
-      "catalogo/set liguero monserrat/WhatsApp Image 2026-11-18 at 10.28.50 PM (4).jpeg"
+      "catalogo/set liguero monserrat/vianne-monserrat-1.jpg",
+      "catalogo/set liguero monserrat/vianne-monserrat-2.jpg",
+      "catalogo/set liguero monserrat/vianne-monserrat-3.jpg"
     ]
   }
 ]
