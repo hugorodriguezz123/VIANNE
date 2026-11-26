@@ -410,9 +410,8 @@
     "category": "Conjuntos",
     "price": 58000,
     "salePrice": null,
-    "stock": 0,
+    "stock": 10,
     "sizes": [
-      "M",
       "L"
     ],
     "description": "",
