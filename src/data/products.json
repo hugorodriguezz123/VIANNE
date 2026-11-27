@@ -469,7 +469,7 @@
     "price": 70000,
     "salePrice": null,
     "blackFriday": false,
-    "stock": 10,
+    "stock": 0,
     "sizes": [
       "M",
       "L"
