@@ -1,4 +1,4 @@
-import { Tag } from 'lucide-react'
+import { Tag, Zap } from 'lucide-react'
 import { hasPromo, discountPercent, type Product } from '../../data/products'
 import { formatCOP } from '../../lib/format'
 
@@ -36,9 +36,19 @@ export function Price({ product, size = 'sm', className = '' }: PriceProps) {
   )
 }
 
-/** Etiqueta "PROMO -21%" */
+/** Etiqueta "PROMO -21%" (o "BLACK FRIDAY -18%") */
 export function PromoBadge({ product, className = '' }: { product: Product; className?: string }) {
   if (!hasPromo(product)) return null
+  if (product.blackFriday) {
+    return (
+      <span
+        className={`inline-flex items-center gap-1 font-sans text-[11px] font-bold uppercase tracking-wider text-white bg-black border border-primary-bright shadow-glow-sm px-3 py-1.5 rounded-full ${className}`}
+      >
+        <Zap size={11} className="text-primary-bright fill-primary-bright" />
+        Black Friday -{discountPercent(product)}%
+      </span>
+    )
+  }
   return (
     <span
       className={`inline-flex items-center gap-1 font-sans text-[11px] font-bold uppercase tracking-wider text-white bg-gradient-to-r from-primary to-primary-bright shadow-glow-sm px-3 py-1.5 rounded-full ${className}`}

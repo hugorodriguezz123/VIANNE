@@ -21,7 +21,7 @@ export function buildWhatsAppUrl(product: Product, size?: string): string {
     `*${product.name}*`,
     ...(size ? [`Talla: *${size}*`] : []),
     ...(hasPromo(product)
-      ? [`Precio PROMO: *${formatCOP(product.salePrice)}* (antes ${formatCOP(product.price)})`]
+      ? [`Precio ${product.blackFriday ? 'BLACK FRIDAY' : 'PROMO'}: *${formatCOP(product.salePrice)}* (antes ${formatCOP(product.price)})`]
       : [`Precio: *${formatCOP(product.price)}*`]),
     '',
     photoUrl,

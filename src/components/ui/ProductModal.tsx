@@ -140,7 +140,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
               <Price product={product} size="lg" className="mt-1" />
               {hasPromo(product) && (
                 <span className="font-sans text-xs font-semibold text-primary-bright">
-                  Ahorras {formatCOP(product.price - product.salePrice)} · Precio de promoción
+                  Ahorras {formatCOP(product.price - product.salePrice)} · {product.blackFriday ? 'Precio Black Friday' : 'Precio de promoción'}
                 </span>
               )}
             </div>

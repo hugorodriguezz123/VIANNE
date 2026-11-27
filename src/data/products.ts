@@ -9,6 +9,8 @@ export type Product = {
   price: number
   /** Precio con descuento (promo). null = sin promoción */
   salePrice: number | null
+  /** El descuento es de Black Friday (etiqueta especial) */
+  blackFriday: boolean
   stock: number
   sizes: string[]
   description: string
@@ -32,8 +34,9 @@ function resolveImage(path: string): string {
   return url ?? path
 }
 
-// Orden: promociones primero, agotados al final; el resto conserva el orden del catálogo.
-const rank = (p: { salePrice: number | null; stock: number }) => (p.stock === 0 ? 2 : p.salePrice !== null ? 0 : 1)
+// Orden: Black Friday primero, luego promociones, agotados al final; el resto conserva el orden del catálogo.
+const rank = (p: { salePrice: number | null; blackFriday: boolean; stock: number }) =>
+  p.stock === 0 ? 3 : p.salePrice === null ? 2 : p.blackFriday ? 0 : 1
 export const products: Product[] = data
   .map((p) => ({ ...p, images: p.images.map(resolveImage) }))
   .sort((a, b) => rank(a) - rank(b))

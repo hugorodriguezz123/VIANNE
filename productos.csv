@@ -1,35 +1,39 @@
-﻿id;nombre;categoria;precio;precio_promo;stock;tallas;descripcion;detalles;imagenes
-arnes-graduable;Arnés graduable;Accesorios;50000;;10;Única;;;catalogo/Arnes Graduable/vianne-arnes-graduable-1.jpg
-bata-sexy-encanto;Bata sexy Encanto;Babydolls y batas;55000;;10;L;;Incluye 2 piezas;catalogo/Bata Sexy Encanto/vianne-bata-encanto-1.jpg|catalogo/Bata Sexy Encanto/vianne-bata-encanto-2.jpg
-bodydoll-ensueno-blanco;Babydoll Ensueño Blanco;Babydolls y batas;55000;;10;S|L;;Color blanco;catalogo/Bodydoll Ensueño Blanco/vianne-bodydoll-ensueno-blanco-1.jpg
-bodydoll-ensueno-vinotinto;Babydoll Ensueño Vinotinto;Babydolls y batas;55000;;10;L|XL;;Color vinotinto;catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-1.jpg|catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-2.jpg
-bodydoll-provenza;Babydoll Provenza;Babydolls y batas;60000;;10;M|L;;;catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-1.jpg|catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-2.jpg
-bodydoll-seduccion;Bodydoll Seducción;Babydolls y batas;55000;;10;L|XL;;;catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-1.jpg|catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-2.jpg
-conj-lenceria-ambar-azul;Conjunto Ámbar azul;Conjuntos;55000;;10;S|M;;Color azul;catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-1.jpg|catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-2.jpg|catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-3.jpg
-conj-lenceria-ambar-negro;Conjunto Lencería Ámbar Negro;Conjuntos;55000;;10;M;;Color negro;catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-1.jpg|catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-2.jpg
-conj-lenceria-amelie;Conjunto Lencería Amelie;Conjuntos;50000;;10;S|M|L|XL;;;catalogo/conj. lenceria Amelie/vianne-amelie-1.jpg|catalogo/conj. lenceria Amelie/vianne-amelie-2.jpg
-conj-lenceria-amore;Conjunto Lencería Amore;Conjuntos;55000;;10;S|M|L;;;catalogo/conj. lenceria amore/vianne-amore-1.jpg|catalogo/conj. lenceria amore/vianne-amore-2.jpg|catalogo/conj. lenceria amore/vianne-amore-3.jpg
-conj-lenceria-bali;Conjunto Lencería Bali;Conjuntos;55000;;10;S|M;;;catalogo/conj. lenceria Bali/vianne-bali-1.jpg|catalogo/conj. lenceria Bali/vianne-bali-2.jpg|catalogo/conj. lenceria Bali/vianne-bali-3.jpg
-conj-lenceria-bianca;Conjunto Lencería Bianca;Conjuntos;55000;;10;S|M;;Color negro;catalogo/conj. lenceria Bianca/vianne-bianca-1.jpg|catalogo/conj. lenceria Bianca/vianne-bianca-2.jpg|catalogo/conj. lenceria Bianca/vianne-bianca-3.jpg
-conj-lenceria-lila-floral;Conjunto Lencería Lila floral;Conjuntos;55000;;10;S|M;;Color lila;catalogo/conj. lenceria Lila Floral/vianne-lila-floral-1.jpg|catalogo/conj. lenceria Lila Floral/vianne-lila-floral-2.jpg
-conj-lenceria-liora;Conjunto Lencería Liora;Conjuntos;55000;;10;L|XL;;;catalogo/conj. lenceria Liora/vianne-liora-1.jpg|catalogo/conj. lenceria Liora/vianne-liora-2.jpg
-conj-lenceria-magnolia;Conjunto Lencería Magnolia;Conjuntos;55000;;10;XS|S|M;;;catalogo/conj. lenceria Magnolia/vianne-magnolia-1.jpg|catalogo/conj. lenceria Magnolia/vianne-magnolia-2.jpg
-conj-lenceria-mia;Conjunto Lencería Mía;Conjuntos;55000;;10;S|L;;;catalogo/conj. lenceria Mia/vianne-mia-1.jpg|catalogo/conj. lenceria Mia/vianne-mia-2.jpg|catalogo/conj. lenceria Mia/vianne-mia-3.jpg
-conj-lenceria-namy;Conjunto Lencería NAMY;Conjuntos;55000;;10;S|M;;;catalogo/conj. lenceria NAMY/vianne-namy-1.jpg|catalogo/conj. lenceria NAMY/vianne-namy-2.jpg
-conj-lenceria-noir;Conjunto Lencería Noir;Conjuntos;60000;;10;S|M|L;;;catalogo/conj. lenceria Noir/vianne-noir-1.jpg|catalogo/conj. lenceria Noir/vianne-noir-2.jpg
-conj-lenceria-nova;Conjunto Lencería Nova;Conjuntos;55000;;10;XS|S|M|L;;;catalogo/conj. lenceria Nova/vianne-nova-1.jpg|catalogo/conj. lenceria Nova/vianne-nova-2.jpg|catalogo/conj. lenceria Nova/vianne-nova-3.jpg
-conj-lenceria-primavera;Conjunto Lencería Primavera;Conjuntos;55000;;10;S|M|L|XL;;;catalogo/conj. lenceria Primavera/vianne-primavera-1.jpg|catalogo/conj. lenceria Primavera/vianne-primavera-2.jpg|catalogo/conj. lenceria Primavera/vianne-primavera-3.jpg
-conj-lenceria-rose-sin-varilla;Conjunto Lencería Rose;Conjuntos;50000;;10;XS|S;;Sin varilla;catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-1.jpg|catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-2.jpg
-conj-lenceria-tentacion;Conjunto Lencería Tentación;Conjuntos;58000;;10;L;;;catalogo/conj. lenceria Tentacion/vianne-tentacion-1.jpg|catalogo/conj. lenceria Tentacion/vianne-tentacion-2.jpg
-conj-lenceria-turquia;Conjunto Lencería Turquía;Conjuntos;70000;;10;M|L;;Incluye accesorios liguero+ collar;catalogo/conj. lenceria Turquia/vianne-turquia-1.jpg
-conj-lenceria-valentina;Conjunto Lencería Valentina;Conjuntos;55000;;10;S|M|L|XL;;;catalogo/conj. lenceria Valentina/vianne-valentina-1.jpg|catalogo/conj. lenceria Valentina/vianne-valentina-2.jpg|catalogo/conj. lenceria Valentina/vianne-valentina-3.jpg
-conj-lenceriatoscana;Conjunto lencería Toscana;Conjuntos;70000;55000;3;XS|S;;;catalogo/conj. lenceriaToscana/vianne-toscana-1.jpg|catalogo/conj. lenceriaToscana/vianne-toscana-2.jpg
-lenceria-con-liguero-andorra;Lencería con Liguero Andorra;Sets;70000;;10;S|M|L|XL;;;catalogo/Lenceria con liguero Andorra/vianne-andorra-1.jpg|catalogo/Lenceria con liguero Andorra/vianne-andorra-2.jpg
-set-grecia-cuerina;Set Grecia en Cuerina;Sets;55000;;10;S|M;;Incluye esposas;catalogo/Set Grecia cuerina/vianne-grecia-cuerina-1.jpg|catalogo/Set Grecia cuerina/vianne-grecia-cuerina-2.jpg
-set-lenceria-cerena;Set Lencería Cerena;Sets;65000;;10;S|M;;;catalogo/Set Lenceria Cerena/vianne-cerena-1.jpg
-set-lenceria-con-liguero-aurora;Set Lenceria con Liguero Aurora;Sets;75000;;10;S|M;;;catalogo/Set Lenceria con liguero Aurora/vianne-aurora-1.jpg
-set-lenceria-con-liguero-cuerina-matilda;Set Lencería con liguero En cuerina Matilda;Sets;65000;;10;S|M|L;;;catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-1.jpg|catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-2.jpg
-set-lenceria-con-liguero-ivonne;Set Lencería con Liguero Ivonne;Sets;75000;;10;M|L|XL;;;catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-1.jpg|catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-2.jpg|catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-3.jpg
-set-lenceria-con-liguero-venecia;Set Lencería con liguero Venecia;Sets;65000;;10;S|M;;Tela cuerina;catalogo/Set Lenceria con liguero Venecia/vianne-venecia-1.jpg
-set-lenceria-romance;Set Lencería Romance;Sets;58000;;10;S|M;;;catalogo/Set lenceria Romance/vianne-romance-1.jpg|catalogo/Set lenceria Romance/vianne-romance-2.jpg
-set-liguero-monserrat;Set con Liguero Monserrat;Sets;65000;;10;S;;;catalogo/set liguero monserrat/vianne-monserrat-1.jpg|catalogo/set liguero monserrat/vianne-monserrat-2.jpg|catalogo/set liguero monserrat/vianne-monserrat-3.jpg
+﻿id;nombre;categoria;precio;precio_promo;black_friday;stock;tallas;descripcion;detalles;imagenes
+arnes-graduable;Arnés graduable;Accesorios;50000;;;10;Única;;;catalogo/Arnes Graduable/vianne-arnes-graduable-1.jpg
+bata-sexy-encanto;Bata sexy Encanto;Babydolls y batas;55000;;;10;L;;Incluye 2 piezas;catalogo/Bata Sexy Encanto/vianne-bata-encanto-1.jpg|catalogo/Bata Sexy Encanto/vianne-bata-encanto-2.jpg
+bodydoll-ensueno-blanco;Babydoll Ensueño Blanco;Babydolls y batas;55000;;;10;S|L;;Color blanco;catalogo/Bodydoll Ensueño Blanco/vianne-bodydoll-ensueno-blanco-1.jpg
+bodydoll-ensueno-vinotinto;Babydoll Ensueño Vinotinto;Babydolls y batas;55000;;;10;L|XL;;Color vinotinto;catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-1.jpg|catalogo/Bodydoll Ensueño vinotinto/vianne-bodydoll-ensueno-vinotinto-2.jpg
+bodydoll-provenza;Babydoll Provenza;Babydolls y batas;60000;;;10;M|L;;;catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-1.jpg|catalogo/Bodydoll Provenza/vianne-bodydoll-provenza-2.jpg
+bodydoll-seduccion;Bodydoll Seducción;Babydolls y batas;55000;;;10;L|XL;;;catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-1.jpg|catalogo/Bodydoll seduccion/vianne-bodydoll-seduccion-2.jpg
+conj-lenceria-ambar-azul;Conjunto Ámbar azul;Conjuntos;55000;;;10;S|M;;Color azul;catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-1.jpg|catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-2.jpg|catalogo/conj. lenceria Ambar Azul/vianne-ambar-azul-3.jpg
+conj-lenceria-ambar-negro;Conjunto Lencería Ámbar Negro;Conjuntos;55000;;;10;M;;Color negro;catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-1.jpg|catalogo/conj. lenceria Ambar Negro/vianne-ambar-negro-2.jpg
+conj-lenceria-amelie;Conjunto Lencería Amelie;Conjuntos;50000;;;10;S|M|L|XL;;;catalogo/conj. lenceria Amelie/vianne-amelie-1.jpg|catalogo/conj. lenceria Amelie/vianne-amelie-2.jpg
+conj-lenceria-amore;Conjunto Lencería Amore;Conjuntos;55000;;;10;S|M|L;;;catalogo/conj. lenceria amore/vianne-amore-1.jpg|catalogo/conj. lenceria amore/vianne-amore-2.jpg|catalogo/conj. lenceria amore/vianne-amore-3.jpg
+conj-lenceria-bali;Conjunto Lencería Bali;Conjuntos;55000;;;10;S|M;;;catalogo/conj. lenceria Bali/vianne-bali-1.jpg|catalogo/conj. lenceria Bali/vianne-bali-2.jpg|catalogo/conj. lenceria Bali/vianne-bali-3.jpg
+conj-lenceria-bianca;Conjunto Lencería Bianca;Conjuntos;55000;;;10;S|M;;Color negro;catalogo/conj. lenceria Bianca/vianne-bianca-1.jpg|catalogo/conj. lenceria Bianca/vianne-bianca-2.jpg|catalogo/conj. lenceria Bianca/vianne-bianca-3.jpg
+conj-lenceria-lila-floral;Conjunto Lencería Lila floral;Conjuntos;55000;;;10;S|M;;Color lila;catalogo/conj. lenceria Lila Floral/vianne-lila-floral-1.jpg|catalogo/conj. lenceria Lila Floral/vianne-lila-floral-2.jpg
+conj-lenceria-liora;Conjunto Lencería Liora;Conjuntos;55000;;;10;L|XL;;;catalogo/conj. lenceria Liora/vianne-liora-1.jpg|catalogo/conj. lenceria Liora/vianne-liora-2.jpg
+conj-lenceria-magnolia;Conjunto Lencería Magnolia;Conjuntos;55000;;;10;XS|S|M;;;catalogo/conj. lenceria Magnolia/vianne-magnolia-1.jpg|catalogo/conj. lenceria Magnolia/vianne-magnolia-2.jpg
+conj-lenceria-mia;Conjunto Lencería Mía;Conjuntos;55000;;;10;S|L;;;catalogo/conj. lenceria Mia/vianne-mia-1.jpg|catalogo/conj. lenceria Mia/vianne-mia-2.jpg|catalogo/conj. lenceria Mia/vianne-mia-3.jpg
+conj-lenceria-moka;Conjunto Lencería Moka;Conjuntos;55000;;;10;S|M;;;catalogo/conj. lenceria Moka/vianne-moka-1.jpg|catalogo/conj. lenceria Moka/vianne-moka-2.jpg
+conj-lenceria-namy;Conjunto Lencería NAMY;Conjuntos;55000;;;10;S|M;;;catalogo/conj. lenceria NAMY/vianne-namy-1.jpg|catalogo/conj. lenceria NAMY/vianne-namy-2.jpg
+conj-lenceria-noir;Conjunto Lencería Noir;Conjuntos;60000;;;10;S|M|L;;;catalogo/conj. lenceria Noir/vianne-noir-1.jpg|catalogo/conj. lenceria Noir/vianne-noir-2.jpg
+conj-lenceria-nova;Conjunto Lencería Nova;Conjuntos;55000;;;10;XS|S|M|L;;;catalogo/conj. lenceria Nova/vianne-nova-1.jpg|catalogo/conj. lenceria Nova/vianne-nova-2.jpg|catalogo/conj. lenceria Nova/vianne-nova-3.jpg
+conj-lenceria-primavera;Conjunto Lencería Primavera;Conjuntos;55000;;;10;S|M|L|XL;;;catalogo/conj. lenceria Primavera/vianne-primavera-1.jpg|catalogo/conj. lenceria Primavera/vianne-primavera-2.jpg|catalogo/conj. lenceria Primavera/vianne-primavera-3.jpg
+conj-lenceria-rose-sin-varilla;Conjunto Lencería Rose;Conjuntos;50000;;;10;XS|S;;Sin varilla;catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-1.jpg|catalogo/conj. lenceria Rose sin Varilla/vianne-rose-sin-varilla-2.jpg
+conj-lenceria-tentacion;Conjunto Lencería Tentación;Conjuntos;58000;;;10;L;;;catalogo/conj. lenceria Tentacion/vianne-tentacion-1.jpg|catalogo/conj. lenceria Tentacion/vianne-tentacion-2.jpg
+conj-lenceria-turquia;Conjunto Lencería Turquía;Conjuntos;70000;;;10;M|L;;Incluye accesorios liguero+ collar;catalogo/conj. lenceria Turquia/vianne-turquia-1.jpg
+conj-lenceria-valentina;Conjunto Lencería Valentina;Conjuntos;55000;;;10;S|M|L|XL;;;catalogo/conj. lenceria Valentina/vianne-valentina-1.jpg|catalogo/conj. lenceria Valentina/vianne-valentina-2.jpg|catalogo/conj. lenceria Valentina/vianne-valentina-3.jpg
+conj-lenceriatoscana;Conjunto lencería Toscana;Conjuntos;70000;55000;;3;XS|S;;;catalogo/conj. lenceriaToscana/vianne-toscana-1.jpg|catalogo/conj. lenceriaToscana/vianne-toscana-2.jpg
+descuento-black-friday;Conjunto Lencería Rojo Bordado;Conjuntos;55000;45000;si;3;S;;;catalogo/Descuento Black Friday/vianne-descuento-black-friday-1.jpg
+lenceria-con-liguero-andorra;Lencería con Liguero Andorra;Sets;70000;;;10;S|M|L|XL;;;catalogo/Lenceria con liguero Andorra/vianne-andorra-1.jpg|catalogo/Lenceria con liguero Andorra/vianne-andorra-2.jpg
+set-grecia-cuerina;Set Grecia en Cuerina;Sets;55000;;;10;S|M;;Incluye esposas;catalogo/Set Grecia cuerina/vianne-grecia-cuerina-1.jpg|catalogo/Set Grecia cuerina/vianne-grecia-cuerina-2.jpg
+set-lenceria-cerena;Set Lencería Cerena;Sets;65000;;;10;S|M;;;catalogo/Set Lenceria Cerena/vianne-cerena-1.jpg
+set-lenceria-con-liguero-aurora;Set Lenceria con Liguero Aurora;Sets;75000;;;10;S|M;;;catalogo/Set Lenceria con liguero Aurora/vianne-aurora-1.jpg
+set-lenceria-con-liguero-cuerina-matilda;Set Lencería con liguero En cuerina Matilda;Sets;65000;;;10;S|M|L;;;catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-1.jpg|catalogo/Set lenceria con liguero cuerina Matilda/vianne-cuerina-matilda-2.jpg
+set-lenceria-con-liguero-ivonne;Set Lencería con Liguero Ivonne;Sets;75000;;;10;M|L|XL;;;catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-1.jpg|catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-2.jpg|catalogo/Set lenceria con liguero Ivonne/vianne-ivonne-3.jpg
+set-lenceria-con-liguero-venecia;Set Lencería con liguero Venecia;Sets;65000;;;10;S|M;;Tela cuerina;catalogo/Set Lenceria con liguero Venecia/vianne-venecia-1.jpg
+set-lenceria-con-liguero-venus;Set Lencería con liguero Venus;Sets;65000;;;10;S|M|L;;;catalogo/Set lenceria con liguero Venus/vianne-venus-1.jpg
+set-lenceria-milan;Set Lencería Milan;Sets;60000;50000;si;10;M|L;;;catalogo/set lenceria Milan/vianne-milan-1.jpg
+set-lenceria-romance;Set Lencería Romance;Sets;58000;;;10;S|M;;;catalogo/Set lenceria Romance/vianne-romance-1.jpg|catalogo/Set lenceria Romance/vianne-romance-2.jpg
+set-liguero-monserrat;Set con Liguero Monserrat;Sets;65000;;;10;S;;;catalogo/set liguero monserrat/vianne-monserrat-1.jpg|catalogo/set liguero monserrat/vianne-monserrat-2.jpg|catalogo/set liguero monserrat/vianne-monserrat-3.jpg

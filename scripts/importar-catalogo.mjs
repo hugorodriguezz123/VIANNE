@@ -19,7 +19,9 @@
  *                                   o las tallas en la línea siguiente)
  *   Descuento 55.000              ← opcional: precio en promoción (también acepta "Descuento 20%").
  *                                   Los productos en promo se muestran primero con etiqueta PROMO
- *   Últimas unidades              ← opcional: muestra la etiqueta "¡Últimas unidades!"
+ *   Black Friday                  ← opcional: si "Black Friday" aparece en el txt o en la carpeta, el
+ *                                   descuento se muestra con la etiqueta BLACK FRIDAY
+ *   Últimas unidades              ← opcional: muestra la etiqueta "¡Últimas unidades!" (o "Última unidad talla S")
  *   Agotado                       ← opcional: se muestra "Agotado" y no se puede pedir por WhatsApp
  *   Color negro                   ← opcional: línea con "color"
  *   Incluye esposas               ← cualquier otra línea se muestra como detalle
@@ -93,6 +95,14 @@ function parseDetails(text, folder) {
   if (lines.length === 0) throw new Error(`details.txt vacío en "${folder}"`)
 
   let name = lines[0].replace(/\s+/g, ' ')
+  let rest = lines.slice(1)
+  // Nombre partido en dos líneas ("Conjunto Lencería" / "Moka") → se unen
+  if (slugify(name).split('-').every((w) => FILLER_WORDS.has(w)) && rest[0] && !/precio|talla|\d/i.test(rest[0])) {
+    name = `${name} ${rest[0].replace(/\s+/g, ' ')}`
+    rest = rest.slice(1)
+  }
+  const blackFriday = /black\s*friday/i.test(`${folder}
+${text}`)
   let price = 0
   let sizes = []
   let color = ''
@@ -102,7 +112,7 @@ function parseDetails(text, folder) {
   let expectSizes = false
   const extras = []
 
-  for (const line of lines.slice(1)) {
+  for (const line of rest) {
     // "Tallas disponibles" sin tallas → vienen en la línea siguiente
     if (expectSizes && isSizesOnly(line)) {
       sizes = parseSizes(`talla ${line}`)
@@ -110,6 +120,9 @@ function parseDetails(text, folder) {
       continue
     }
     expectSizes = false
+
+    // "Última unidad talla S" → últimas unidades + talla
+    if (/[uú]ltimas?\s+unidad(es)?/i.test(line)) lastUnits = true
 
     if (/descuento|promo|oferta/i.test(line)) discountLine = line
     else if (/precio/i.test(line)) price = Number(line.replace(/[^\d]/g, ''))
@@ -131,7 +144,7 @@ function parseDetails(text, folder) {
 
   const salePrice = discountLine ? parseDiscount(discountLine, price) : 0
 
-  return { name, price, salePrice, lastUnits, soldOut, sizes, color: color ? capitalize(color.toLowerCase()) : '', extras }
+  return { name, price, salePrice, blackFriday: blackFriday && salePrice > 0, lastUnits, soldOut, sizes, color: color ? capitalize(color.toLowerCase()) : '', extras }
 }
 
 // ── Nombres de fotos amigables ──────────────────────────────────────────────
@@ -227,7 +240,7 @@ for (const it of items) {
 }
 
 const csvEscape = (v) => (/[;"\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v)
-const rows = [['id', 'nombre', 'categoria', 'precio', 'precio_promo', 'stock', 'tallas', 'descripcion', 'detalles', 'imagenes']]
+const rows = [['id', 'nombre', 'categoria', 'precio', 'precio_promo', 'black_friday', 'stock', 'tallas', 'descripcion', 'detalles', 'imagenes']]
 
 for (const it of items) {
   const id = slugify(it.folder)
@@ -240,6 +253,7 @@ for (const it of items) {
     categoryFor(it.name),
     String(it.price),
     it.salePrice ? String(it.salePrice) : '',
+    it.blackFriday ? 'si' : '',
     String(it.soldOut ? 0 : it.lastUnits ? LAST_UNITS_STOCK : DEFAULT_STOCK),
     it.sizes.join('|'),
     '',
@@ -257,7 +271,7 @@ warnings.forEach((w) => console.log(`  ⚠ ${w}`))
 const agotados = items.filter((it) => it.soldOut)
 if (agotados.length) console.log(`  Agotados: ${agotados.map((it) => it.name).join(', ')}`)
 const promos = items.filter((it) => it.salePrice)
-if (promos.length) console.log(`  En promo: ${promos.map((it) => it.name).join(', ')}`)
+if (promos.length) console.log(`  En promo: ${promos.map((it) => it.name + (it.blackFriday ? ' (Black Friday)' : '')).join(', ')}`)
 console.log(`  productos.csv generado\n`)
 
 execFileSync(process.execPath, [resolve(root, 'scripts/importar-productos.mjs')], { stdio: 'inherit' })

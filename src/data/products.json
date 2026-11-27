@@ -5,6 +5,7 @@
     "category": "Accesorios",
     "price": 50000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "Única"
@@ -21,6 +22,7 @@
     "category": "Babydolls y batas",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "L"
@@ -40,6 +42,7 @@
     "category": "Babydolls y batas",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -59,6 +62,7 @@
     "category": "Babydolls y batas",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "L",
@@ -79,6 +83,7 @@
     "category": "Babydolls y batas",
     "price": 60000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "M",
@@ -97,6 +102,7 @@
     "category": "Babydolls y batas",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "L",
@@ -115,6 +121,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -136,6 +143,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "M"
@@ -155,6 +163,7 @@
     "category": "Conjuntos",
     "price": 50000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -175,6 +184,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -195,6 +205,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -214,6 +225,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -235,6 +247,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -255,6 +268,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "L",
@@ -273,6 +287,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "XS",
@@ -292,6 +307,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -306,11 +322,31 @@
     ]
   },
   {
+    "id": "conj-lenceria-moka",
+    "name": "Conjunto Lencería Moka",
+    "category": "Conjuntos",
+    "price": 55000,
+    "salePrice": null,
+    "blackFriday": false,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Moka/vianne-moka-1.jpg",
+      "catalogo/conj. lenceria Moka/vianne-moka-2.jpg"
+    ]
+  },
+  {
     "id": "conj-lenceria-namy",
     "name": "Conjunto Lencería NAMY",
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -329,6 +365,7 @@
     "category": "Conjuntos",
     "price": 60000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -348,6 +385,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "XS",
@@ -369,6 +407,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -390,6 +429,7 @@
     "category": "Conjuntos",
     "price": 50000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "XS",
@@ -410,6 +450,7 @@
     "category": "Conjuntos",
     "price": 58000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "L"
@@ -427,6 +468,7 @@
     "category": "Conjuntos",
     "price": 70000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "M",
@@ -446,6 +488,7 @@
     "category": "Conjuntos",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -467,6 +510,7 @@
     "category": "Conjuntos",
     "price": 70000,
     "salePrice": 55000,
+    "blackFriday": false,
     "stock": 3,
     "sizes": [
       "XS",
@@ -480,11 +524,29 @@
     ]
   },
   {
+    "id": "descuento-black-friday",
+    "name": "Conjunto Lencería Rojo Bordado",
+    "category": "Conjuntos",
+    "price": 55000,
+    "salePrice": 45000,
+    "blackFriday": true,
+    "stock": 3,
+    "sizes": [
+      "S"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Descuento Black Friday/vianne-descuento-black-friday-1.jpg"
+    ]
+  },
+  {
     "id": "lenceria-con-liguero-andorra",
     "name": "Lencería con Liguero Andorra",
     "category": "Sets",
     "price": 70000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -505,6 +567,7 @@
     "category": "Sets",
     "price": 55000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -525,6 +588,7 @@
     "category": "Sets",
     "price": 65000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -542,6 +606,7 @@
     "category": "Sets",
     "price": 75000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -559,6 +624,7 @@
     "category": "Sets",
     "price": 65000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -578,6 +644,7 @@
     "category": "Sets",
     "price": 75000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "M",
@@ -598,6 +665,7 @@
     "category": "Sets",
     "price": 65000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -612,11 +680,49 @@
     ]
   },
   {
+    "id": "set-lenceria-con-liguero-venus",
+    "name": "Set Lencería con liguero Venus",
+    "category": "Sets",
+    "price": 65000,
+    "salePrice": null,
+    "blackFriday": false,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/Set lenceria con liguero Venus/vianne-venus-1.jpg"
+    ]
+  },
+  {
+    "id": "set-lenceria-milan",
+    "name": "Set Lencería Milan",
+    "category": "Sets",
+    "price": 60000,
+    "salePrice": 50000,
+    "blackFriday": true,
+    "stock": 10,
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/set lenceria Milan/vianne-milan-1.jpg"
+    ]
+  },
+  {
     "id": "set-lenceria-romance",
     "name": "Set Lencería Romance",
     "category": "Sets",
     "price": 58000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S",
@@ -635,6 +741,7 @@
     "category": "Sets",
     "price": 65000,
     "salePrice": null,
+    "blackFriday": false,
     "stock": 10,
     "sizes": [
       "S"

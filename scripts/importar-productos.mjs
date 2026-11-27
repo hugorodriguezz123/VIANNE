@@ -10,11 +10,12 @@
  *   npm run productos -- otro.csv  → usa otro archivo
  *
  * Formato del CSV (separador ; o ,):
- *   id;nombre;categoria;precio;precio_promo;stock;tallas;descripcion;detalles;imagenes
+ *   id;nombre;categoria;precio;precio_promo;black_friday;stock;tallas;descripcion;detalles;imagenes
  *
  *   - precio:   en pesos colombianos, sin símbolo. Acepta 85000 o 85.000
  *   - precio_promo: (opcional) precio con descuento. Si tiene valor, el producto sale
  *               primero en el catálogo con la etiqueta PROMO
+ *   - black_friday: (opcional) "si" → el descuento se muestra con la etiqueta BLACK FRIDAY
  *   - stock:    número entero. 0 = agotado (se muestra pero no se puede comprar)
  *   - tallas:   (opcional) lista separada por | (ej: "S|M|L"). El cliente elige una antes de comprar
  *   - detalles: lista separada por | (ej: "Talla S a XL|Seda natural|Lavado a mano")
@@ -110,6 +111,7 @@ rows.forEach((r, idx) => {
   const description = get('descripcion')
   const promoRaw = col.precio_promo === undefined ? '' : get('precio_promo')
   const salePrice = promoRaw ? parsePrice(promoRaw) : null
+  const blackFriday = salePrice !== null && col.black_friday !== undefined && /^(si|sí|x|1|true)$/i.test(get('black_friday'))
   const sizes = (col.tallas === undefined ? '' : get('tallas')).split('|').map((t) => t.trim()).filter(Boolean)
   const details = get('detalles').split('|').map((d) => d.trim()).filter(Boolean)
   const images = get('imagenes').split('|').map((u) => u.trim()).filter(Boolean)
@@ -125,7 +127,7 @@ rows.forEach((r, idx) => {
   if (!Number.isInteger(stock) || stock < 0) errors.push(`Línea ${line}: stock inválido "${get('stock')}"`)
   if (images.length === 0) errors.push(`Línea ${line}: se necesita al menos una imagen`)
 
-  products.push({ id, name, category, price, salePrice, stock, sizes, description, details, images })
+  products.push({ id, name, category, price, salePrice, blackFriday, stock, sizes, description, details, images })
 })
 
 if (errors.length) {
