@@ -505,6 +505,25 @@
     ]
   },
   {
+    "id": "conj-lenceria-valery",
+    "name": "Conjunto Lencería Valery",
+    "category": "Conjuntos",
+    "price": 60000,
+    "salePrice": null,
+    "blackFriday": false,
+    "stock": 10,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "description": "",
+    "details": [],
+    "images": [
+      "catalogo/conj. lenceria Valery/vianne-valery-1.jpg"
+    ]
+  },
+  {
     "id": "conj-lenceriatoscana",
     "name": "Conjunto lencería Toscana",
     "category": "Conjuntos",
